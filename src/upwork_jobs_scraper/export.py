@@ -91,5 +91,6 @@ def write(
         return path
     # utf-8-sig so Excel opens CSVs with non-English job titles correctly.
     encoding = "utf-8-sig" if fmt == "csv" else "utf-8"
-    path.write_text(render(items, fmt), encoding=encoding, newline="")
+    with path.open("w", encoding=encoding, newline="") as fh:  # write_text(newline=) is 3.10+
+        fh.write(render(items, fmt))
     return path
