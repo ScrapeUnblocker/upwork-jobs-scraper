@@ -7,7 +7,7 @@ name = "upwork-jobs-scraper"
 version = "0.1.0"
 description = "Scrape Upwork job postings - budgets, hourly rates, skills, proposals, client spend and location - into clean JSON/CSV via the ScrapeUnblocker API."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [{ name = "ScrapeUnblocker" }]
 keywords = [
@@ -26,14 +26,14 @@ keywords = [
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.13",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Intended Audience :: Developers",
     "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
 ]
-dependencies = ["scrapeunblocker>=0.2,<1"]
+dependencies = ["scrapeunblocker>=0.20,<1"]
 
 [project.urls]
 Homepage = "https://scrapeunblocker.com/?utm_source=github&utm_medium=integration&utm_campaign=example-repos"
@@ -50,7 +50,7 @@ where = ["src"]
 
 [tool.ruff]
 line-length = 100
-target-version = "py39"
+target-version = "py311"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]

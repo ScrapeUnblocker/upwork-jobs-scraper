@@ -1,7 +1,7 @@
 # Upwork Jobs Scraper
 
 [![CI](https://github.com/ScrapeUnblocker/upwork-jobs-scraper/actions/workflows/ci.yml/badge.svg)](https://github.com/ScrapeUnblocker/upwork-jobs-scraper/actions/workflows/ci.yml)
-[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Powered by ScrapeUnblocker](https://img.shields.io/badge/powered%20by-ScrapeUnblocker-6f42c1.svg)](https://scrapeunblocker.com/?utm_source=github&utm_medium=integration&utm_campaign=example-repos)
 
@@ -17,6 +17,9 @@ Powered by [ScrapeUnblocker](https://scrapeunblocker.com/?utm_source=github&utm_
 the `getPageSource` API loads each Upwork page in a real browser and returns the HTML. This
 package decodes the data Upwork embeds in those pages into typed records. You don't need to
 run proxies, headless browsers or retry logic yourself.
+
+Want new Upwork jobs filtered and sent to Telegram, Discord or Slack on a schedule? See
+[upwork-job-alerts](https://github.com/ScrapeUnblocker/upwork-job-alerts).
 
 ## Features
 
@@ -313,7 +316,7 @@ pre-commit install
 ```
 
 The tests build small synthetic pages in Upwork's embedded-data format and replay them through
-a fake client. They spend no API credit and run in CI on Python 3.9 and 3.12.
+a fake client. They spend no API credit and run in CI on Python 3.11 and 3.13.
 
 ## Responsible use
 

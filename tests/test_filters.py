@@ -5,7 +5,7 @@ import datetime as dt
 from upwork_jobs_scraper.filters import JobFilter
 from upwork_jobs_scraper.models import Job
 
-NOW = dt.datetime(2026, 10, 3, 12, 0, tzinfo=dt.timezone.utc)
+NOW = dt.datetime(2026, 10, 3, 12, 0, tzinfo=dt.UTC)
 
 
 def make_job(**kwargs) -> Job:

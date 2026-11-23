@@ -17,7 +17,7 @@ from .parsing import normalize_country, parse_iso
 
 
 def _now() -> _dt.datetime:
-    return _dt.datetime.now(_dt.timezone.utc)
+    return _dt.datetime.now(_dt.UTC)
 
 
 @dataclass(frozen=True)

@@ -20,9 +20,9 @@ from __future__ import annotations
 
 import threading
 import time
-from collections.abc import Iterable, Sequence
+from collections.abc import Callable, Iterable, Sequence
 from concurrent.futures import ThreadPoolExecutor
-from typing import Any, Callable
+from typing import Any
 
 from .filters import JobFilter
 from .models import Job, SearchPage, SkillPage

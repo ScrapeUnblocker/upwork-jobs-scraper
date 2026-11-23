@@ -1,1 +1,1 @@
-scrapeunblocker>=0.2,<1
+scrapeunblocker>=0.20,<1

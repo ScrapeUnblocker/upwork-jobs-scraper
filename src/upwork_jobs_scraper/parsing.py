@@ -188,7 +188,7 @@ def parse_iso(value: Any) -> _dt.datetime | None:
     if not match:
         return None
     year, month, day, hour, minute, second, offset = match.groups()
-    tz = _dt.timezone.utc
+    tz = _dt.UTC
     if offset and offset != "Z":
         sign = -1 if offset[0] == "-" else 1
         digits = offset[1:].replace(":", "")
@@ -205,7 +205,7 @@ def parse_iso(value: Any) -> _dt.datetime | None:
         )
     except ValueError:
         return None
-    return stamp.astimezone(_dt.timezone.utc)
+    return stamp.astimezone(_dt.UTC)
 
 
 def iso_utc(value: Any) -> str | None:
